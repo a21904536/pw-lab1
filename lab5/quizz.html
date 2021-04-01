@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Frankfurt</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Ângelo Bernardes">
+        <meta name="keywords" content="Cidade, Frankfurt, Alemanha">
+        <meta name="description" content="Website sobre Frankfurt">
+        <link rel="shortcut icon" type="image/x-icon" href="images/germany.ico"/>
+        <body style="background-color:#F0E68C"></body>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <center><h1>Frankfurt</h1></center>
+            <figure>
+                <center><img src="images/frankfurt.jpg"></center>
+                <details style="text-align: center;">Foto da praça Romer, localizada em Frankfurt</details>
+            </figure>
+        </header>
+        <nav style="text-align: center;">
+            <a href="html5-css.html"><span class="material-icons md-24">settings</span>  HTML5 e CSS</a>
+            <a href="quizz.html"><span class="material-icons md-24">quiz</span>Quizz</a>
+            <a href="comentarios.html"><span class="material-icons md-24">feedback</span>Comentários</a>
+            <a href="../index.html"><span class="material-icons md-24">home</span>Home</a>
+            <a href="index.html"><span class="material-icons md-24" >star</span> Introdução</a>
+            <a href="local.html"><span class="material-icons md-24">fmd_good</span>Localização</a>
+            <a href="multimedia.html"><span class="material-icons md-24">image</span>Multimédia</a>
+            <a href="info.html"><span class="material-icons md-24">info</span>Informação</a>
+        </nav>
+        <hr>
+        <main>  
+            <h3>Quizz:</h3>
+            <form
+            oninput="a.value=parseInt(densidade.value)"
+            method="post"
+                    action="mailto:a21904536@alunos.ulht.pt">
+                <fieldset>
+                    <legend>Dados</legend>
+                    <p>Nome: <input type="text" name="nome"></p>
+                    <p>Apelido: <input type="text" name="apelido"></p>
+                    <p>Email: <input type="text" name="email"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Quizz</legend>
+                    <p>Onde está localizada a cidade de Frankfurt? <input type="text" name="regiãoCentral"> </p>
+                    <p>Qual a área de Frankfurt?
+                        <label>
+                            <input type="radio" name="248,3" value="248,3"> 248,3 km²
+                        </label>
+                        <label>
+                            <input type="radio" name="348,3" value="348,3"> 348,3 km²
+                        </label>
+                    </p>
+                    <p>Qual o número de habitantes?
+                        <label>
+                            <input type="checkbox" name="1 153 056" value="1 153 056">  1 153 056
+                        </label>
+                        <label>
+                            <input type="checkbox" name="753 056" value="753 056">  753 056
+                        </label>
+                        <label>
+                            <input type="checkbox" name="553 056" value="553 056"> 553 056
+                        </label>
+                    </p>
+                    <p>Em que data Frankfurt se tornou num campo de batalha? <input type="date" name="data"></p>
+                    <p>Qual a primeira cor da bandeira da Alemanha? <input type="color" name="color" value="#F0E68C"></p>
+                    <p>Quantos distritos tem Frankfurt na divisão administrativa? <input type="number" name="number"></p>
+                    <p> Qual densidade populacional de Frankfurt?
+                        <input type="range" name="densidade" min="0" max="3000" value="0">
+                        <output name="a">0</output>
+                    </p>
+                    <input type="submit" value="Submeter">
+                </fieldset>
+                </form>
+        </main>
+        <aside>
+            <figure style="text-align: center;">
+                <img src="images/ponte.jpg" style="border: 5px solid black;">
+                
+            </figure>
+            <div style="text-align: center;">
+            <p>Ponte de Ferro onde os casais demonstram o seu amor ao colocar um cadeado na ponte com as iniciais. O peso dos cadeados tem abalado a estrutura.</p>
+            </div>
+        </aside>
+        <hr>
+            <footer>
+                <p>Ângelo Bernardes - a21904536 - Universidade Lusófona - 2º Ano</p>
+            </footer>
+    </body>
+</html>

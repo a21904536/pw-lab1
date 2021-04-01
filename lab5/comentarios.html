@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Frankfurt</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Ângelo Bernardes">
+        <meta name="keywords" content="Cidade, Frankfurt, Alemanha">
+        <meta name="description" content="Website sobre Frankfurt">
+        <link rel="shortcut icon" type="image/x-icon" href="images/germany.ico"/>
+        <body style="background-color:#F0E68C"></body>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <center><h1>Frankfurt</h1></center>
+            <figure>
+                <center><img src="images/frankfurt.jpg"></center>
+                <details style="text-align: center;">Foto da praça Romer, localizada em Frankfurt</details>
+            </figure>
+        </header>
+        <nav style="text-align: center;">
+            <a href="html5-css.html"><span class="material-icons md-24">settings</span>  HTML5 e CSS</a>
+            <a href="quizz.html"><span class="material-icons md-24">quiz</span>Quizz</a>
+            <a href="comentarios.html"><span class="material-icons md-24">feedback</span>Comentários</a>
+            <a href="../index.html"><span class="material-icons md-24">home</span>Home</a>
+            <a href="index.html"><span class="material-icons md-24" >star</span> Introdução</a>
+            <a href="local.html"><span class="material-icons md-24">fmd_good</span>Localização</a>
+            <a href="multimedia.html"><span class="material-icons md-24">image</span>Multimédia</a>
+            <a href="info.html"><span class="material-icons md-24">info</span>Informação</a>
+        </nav>
+        <hr>
+        <main>
+            <h3>Comentários:</h3>
+        <form 
+        oninput="out.value=parseInt(rig.value)"
+        method="post"action="mailto:a21904536@alunos.ulht.pt">
+        <fieldset>
+            <legend>Opinião sobre o website</legend>
+            <p> Escolha para cada critério um valor de 1 (Muito Mau) a 5 (Muito bom).</p>
+                <p>Clareza:
+                    <input type="radio" id="clar1" name="clar" value="1">
+                    <label for="clar1">1</label>
+                    <input type="radio" id="clar2" name="clar" value="2">
+                    <label for="clar2">2</label>
+                    <input type="radio" id="clar3" name="clar" value="3">
+                    <label for="clar3">3</label>
+                    <input type="radio" id="clar4" name="clar" value="4">
+                    <label for="clar4">4</label>
+                    <input type="radio" id="clar5" name="clar" value="5">
+                    <label for="clar5">5</label>
+                </p>
+                <p>Rigor:
+                    <input type="range" id="rig" name="rig" min="1" max="5">
+                    <output name="out">3</output>
+                </p>
+                
+                <p>Precisão:
+                    <input type="number" id="pre" name="pre" min="1" max="5">
+                </p>
+               
+                <p>Originalidade:
+                    <input type="number" id="origi" name="origi" min="1" max="5">
+                    
+                </p>
+                <p> Escolha as opções que acha que este Website teve em conta:</p>
+                    <input type="checkbox" id="prof" name="prof" value="Profundidade">
+                    <label for="prof">Profundidade - (complexo com múltiplas inter-relações)</label>
+                    <br>
+                    <input type="checkbox" id="amp" name="amp" value="Amplitude">
+                    <label for="amp">Amplitude - (abrange diferentes aspectos)</label>
+                    <br>
+                    <input type="checkbox" id="log" name="log" value="Lógica">
+                    <label for="log">Lógica - (não há contradições, provém de evidências)</label>
+                    <br>
+                    <input type="checkbox" id="sign" name="sign" value="Significância">
+                    <label for="sign">Significância - (focado no importante)</label>
+                
+                
+                <input type="hidden" id="idLAB" name="idLAB" value="3">
+                <br>
+            <br>
+            <p>Caixa de sugestões</p>
+            <textarea name="comentários"rows="10" cols="50"> </textarea>
+            <br>
+            <input type="submit" value="Enviar comentarios">
+        </fieldset>
+        </form>
+        </main>
+        <aside>
+            <figure style="text-align: center;">
+                <img src="images/ponte.jpg" style="border: 5px solid black;">
+                
+            </figure>
+            <div style="text-align: center;">
+            <p>Ponte de Ferro onde os casais demonstram o seu amor ao colocar um cadeado na ponte com as iniciais. O peso dos cadeados tem abalado a estrutura.</p>
+            </div>
+        </aside>
+        <hr>
+        <footer>
+            <p>Ângelo Bernardes - a21904536 - Universidade Lusófona - 2º Ano</p>
+        </footer>
+    </body>
+</html>
